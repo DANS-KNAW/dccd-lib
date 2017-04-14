@@ -69,6 +69,9 @@ public class DccdConfigurationService implements ConfigurationService
 		defaultSettings.put("mail.smtp.host","localhost");
 		defaultSettings.put("mail.fromAddress","###Fill-In-Email###");
 		
+		// PIWIK
+		defaultSettings.put("piwik.siteid","7"); // test mode
+		
 		// Maintenance info, separate properties
 		defaultMaintenance = new Properties();
 		defaultMaintenance.put(maintenance_message_key, ""); // empty message, assume nothing to inform about!
